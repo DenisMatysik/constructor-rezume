@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./script.js" defer></script>
+    <title>Constuctor rezume</title>
+  </head>
+  <body>
+    <button class="reload">Reload page</button>
+    <main class="constuctor">
+      <h1>Constuctor rezume</h1>
+      <form class="inputs-container">
+        <div>
+          <label for="photo">Add photo to your resume</label>
+          <input type="file" id="photo" accept=".jpg, .jpeg, .png" />
+          <img src="" alt="prewiew img" class="previewImg none" />
+        </div>
+        <div>
+          <label for="fio">Add full name</label>
+          <input
+            class="input"
+            type="text"
+            id="fio"
+            placeholder="Ivan Ivanovich Ivanov"
+          />
+        </div>
+        <div>
+          <label for="birthYear">Birth</label>
+          <input
+            class="input"
+            type="text"
+            id="birthYear"
+            placeholder="DD/MM/YYYY"
+          />
+        </div>
+        <div>
+          <label for="phoneNumber">Phone number</label>
+          <input
+            class="input"
+            type="tel"
+            id="phoneNumber"
+            placeholder="+375 (99) 999-99-99"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            class="input"
+            type="email"
+            placeholder="asd@asd.as"
+            id="email"
+          />
+        </div>
+        <button id="submitForm" type="submit">Add main inf to resume</button>
+      </form>
+    </main>
+    <article>
+      <div class="mainInf none">
+        <div class="mainInf__item mainInf__item_photo">
+          <h3>Photo</h3>
+          <img src="" alt="Photo" id="resume-photo" />
+        </div>
+        <div class="mainInf__item mainInf__item_fio">
+          <h3>Full name</h3>
+          <p></p>
+        </div>
+        <div class="mainInf__item mainInf__item_birthYear">
+          <h3>Birth year</h3>
+          <p></p>
+        </div>
+        <div class="mainInf__item mainInf__item_phoneNumber">
+          <h3>Phone number</h3>
+          <p></p>
+        </div>
+        <div class="mainInf__item mainInf__item_email">
+          <h3>Email</h3>
+          <p></p>
+        </div>
+      </div>
+      <button style="margin-top: 20px" class="addNewBlockBtn none">
+        Add new block
+      </button>
+    </article>
+    <!-- part3 -->
+    <form class="newInfForm none">
+      <div class="newInfFormContainer">
+        <div class="newInfForm__Title">
+          <label for="newInfForm__Title">Block Title</label>
+          <input
+            class="newInfFormInput"
+            type="text"
+            id="newInfForm__Title"
+            placeholder="Hobby"
+          />
+        </div>
+        <div class="newInfForm__Description">
+          <div>
+            <label for="newInfForm__Subtitle">Subtitle</label>
+            <input
+              class="newInfFormInput"
+              type="text"
+              placeholder="Favorite sport"
+              id="newInfForm__Subtitle"
+            />
+          </div>
+          <div>
+            <label for="newInfForm__Value">Value</label>
+            <input
+              class="newInfFormInput"
+              type="text"
+              placeholder="box"
+              id="newInfForm__Value"
+            />
+          </div>
+        </div>
+      </div>
+      <button type="submit">Add new inf</button>
+    </form>
+    <form class="newFieldForm none">
+      <div class="newFieldFormContainer">
+        <div>
+          <label for="newFieldForm__Subtitle">Subtitle</label>
+          <input
+            class="newFieldFormInput"
+            type="text"
+            placeholder="Favorite sport"
+            id="newFieldForm__Subtitle"
+          />
+        </div>
+        <div>
+          <label for="newFieldForm__Value">Value</label>
+          <input
+            class="newFieldFormInput"
+            type="text"
+            placeholder="box"
+            id="newFieldForm__Value"
+          />
+        </div>
+        <button type="submit">Add new field</button>
+      </div>
+    </form>
+  </body>
+</html>

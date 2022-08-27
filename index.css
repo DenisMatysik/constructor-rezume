@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-container div {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h1 {
+  text-align: center;
+}
+
+#resume-photo {
+  width: 150px;
+}
+article {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.none {
+  display: none;
+}
+
+.error {
+  border-color: red;
+}
+
+.previewImg {
+  width: 50px;
+  align-self: center;
+}
+
+.addNewInf {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.addedDescription {
+  display: flex;
+}
+
+.addedDescription div {
+  margin: 0 10px;
+}
+
+.newInfForm,
+.newFieldForm {
+  margin: 1%;
+  margin-left: 44%;
+}
